@@ -1,9 +1,10 @@
 {
  "id": "camstreams",
  "name": "Camstreams",
- "version": 1,
+ "version": 2,
  "adult": true,
  "weight": 0.6,
+ "hedge": 4,
  "match": "camstreams\\.tv/videos/\\d+",
  "icon": "camstreams.png",
  "html": {
@@ -15,6 +16,7 @@
   "title": "title=\"([^\"]+)\"",
   "thumb": "data-original=\"(https?://[^\"]+\\.(?:jpe?g|webp|png)[^\"]*)\"",
   "referer": "https://camstreams.tv/",
-  "paged": true
+  "paged": true,
+  "timeout": 45
  }
 }
