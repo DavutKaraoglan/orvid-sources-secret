@@ -1,7 +1,7 @@
 {
  "id": "camstreams",
  "name": "Camstreams",
- "version": 2,
+ "version": 3,
  "adult": true,
  "weight": 0.6,
  "hedge": 4,
@@ -17,6 +17,7 @@
   "thumb": "data-original=\"(https?://[^\"]+\\.(?:jpe?g|webp|png)[^\"]*)\"",
   "referer": "https://camstreams.tv/",
   "paged": true,
-  "timeout": 45
+  "timeout": 45,
+  "maxHeight": 480
  }
 }
