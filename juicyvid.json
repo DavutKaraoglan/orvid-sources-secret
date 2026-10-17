@@ -1,6 +1,7 @@
 {
  "id": "juicyvid",
  "name": "JuicyVid",
+ "rank": 41,
  "version": 1,
  "adult": true,
  "weight": 0.6,

@@ -1,6 +1,7 @@
 {
  "id": "xhamster",
  "name": "xHamster",
+ "rank": 3,
  "engine": "xhamster",
  "version": 2,
  "adult": true,

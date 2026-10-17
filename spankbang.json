@@ -1,6 +1,7 @@
 {
  "id": "spankbang",
  "name": "SpankBang",
+ "rank": 4,
  "engine": "spankbang",
  "adult": true
 }

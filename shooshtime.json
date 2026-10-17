@@ -1,6 +1,7 @@
 {
  "id": "shooshtime",
  "name": "ShooshTime",
+ "rank": 34,
  "version": 1,
  "adult": true,
  "weight": 0.6,

@@ -1,6 +1,7 @@
 {
  "id": "porngo",
  "name": "PornGo",
+ "rank": 25,
  "version": 1,
  "adult": true,
  "weight": 0.6,

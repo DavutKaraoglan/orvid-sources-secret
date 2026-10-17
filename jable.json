@@ -1,6 +1,7 @@
 {
  "id": "jable",
  "name": "Jable",
+ "rank": 9,
  "engine": "jable",
  "adult": true
 }

@@ -1,6 +1,7 @@
 {
  "id": "rule34video",
  "name": "Rule34Video",
+ "rank": 11,
  "version": 1,
  "adult": true,
  "weight": 0.6,

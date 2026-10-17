@@ -1,6 +1,7 @@
 {
  "id": "drtuber",
  "name": "DrTuber",
+ "rank": 15,
  "version": 1,
  "adult": true,
  "weight": 0.6,

@@ -1,6 +1,7 @@
 {
  "id": "bellesa",
  "name": "Bellesa",
+ "rank": 30,
  "engine": "bellesa",
  "version": 2,
  "adult": true,

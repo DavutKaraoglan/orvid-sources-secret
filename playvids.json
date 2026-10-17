@@ -1,6 +1,7 @@
 {
  "id": "playvids",
  "name": "PlayVids",
+ "rank": 29,
  "version": 1,
  "adult": true,
  "weight": 0.6,

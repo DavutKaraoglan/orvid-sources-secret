@@ -1,6 +1,7 @@
 {
  "id": "xozilla",
  "name": "Xozilla",
+ "rank": 45,
  "version": 1,
  "adult": true,
  "weight": 0.6,

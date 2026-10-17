@@ -1,6 +1,7 @@
 {
  "id": "thisvid",
  "name": "ThisVid",
+ "rank": 17,
  "version": 1,
  "adult": true,
  "weight": 0.6,

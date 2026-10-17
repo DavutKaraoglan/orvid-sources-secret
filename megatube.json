@@ -1,6 +1,7 @@
 {
  "id": "megatube",
  "name": "MegaTube",
+ "rank": 39,
  "version": 1,
  "adult": true,
  "weight": 0.6,

@@ -1,6 +1,7 @@
 {
  "id": "dafreeporn",
  "name": "DaFreePorn",
+ "rank": 40,
  "version": 1,
  "adult": true,
  "weight": 0.6,

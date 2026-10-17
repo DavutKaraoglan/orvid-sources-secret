@@ -1,6 +1,7 @@
 {
  "id": "tnaflix",
  "name": "TNAFlix",
+ "rank": 14,
  "engine": "tnaflix",
  "version": 2,
  "adult": true,

@@ -1,6 +1,7 @@
 {
  "id": "xfights",
  "name": "XFights",
+ "rank": 43,
  "version": 1,
  "adult": true,
  "weight": 0.6,

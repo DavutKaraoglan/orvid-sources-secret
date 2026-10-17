@@ -1,6 +1,7 @@
 {
  "id": "redgifs",
  "name": "RedGIFs",
+ "rank": 5,
  "engine": "redgifs",
  "version": 2,
  "adult": true,

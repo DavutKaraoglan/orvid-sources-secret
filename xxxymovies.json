@@ -1,6 +1,7 @@
 {
  "id": "xxxymovies",
  "name": "XXXYMovies",
+ "rank": 31,
  "version": 1,
  "adult": true,
  "weight": 0.6,

@@ -1,6 +1,7 @@
 {
  "id": "fapcat",
  "name": "FapCat",
+ "rank": 37,
  "version": 1,
  "adult": true,
  "weight": 0.6,

@@ -1,6 +1,7 @@
 {
  "id": "txxx",
  "name": "Txxx",
+ "rank": 10,
  "engine": "txxx",
  "version": 2,
  "adult": true,

@@ -1,6 +1,7 @@
 {
  "id": "maturekinkys",
  "name": "MatureKinkys",
+ "rank": 42,
  "version": 1,
  "adult": true,
  "weight": 0.6,

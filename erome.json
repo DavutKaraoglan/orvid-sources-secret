@@ -1,6 +1,7 @@
 {
  "id": "erome",
  "name": "Erome",
+ "rank": 8,
  "version": 1,
  "adult": true,
  "weight": 0.6,
