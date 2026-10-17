@@ -1,0 +1,21 @@
+{
+ "id": "erome",
+ "name": "Erome",
+ "version": 1,
+ "adult": true,
+ "weight": 0.6,
+ "match": "erome\\.com/a/[A-Za-z0-9]+",
+ "icon": "erome.png",
+ "html": {
+  "site": "https://www.erome.com",
+  "search": "https://www.erome.com/search?q={q}",
+  "searchPage": "https://www.erome.com/search?q={q}&page={p}",
+  "card": "id=\"album-",
+  "href": "href=\"(https://www\\.erome\\.com/a/[A-Za-z0-9]+)\"",
+  "title": "<img [^>]*alt=\"([^\"]+)\"",
+  "thumb": "class=\"album-thumbnail[^\"]*\" src=\"([^\"]+)\"",
+  "views": "fa-eye\"></use></svg>\\s*([0-9.,]+[KkMm]?)",
+  "only": "album-videos",
+  "referer": "https://www.erome.com/"
+ }
+}

@@ -1,0 +1,20 @@
+{
+ "id": "femdomvc",
+ "name": "FemdomVC",
+ "version": 1,
+ "adult": true,
+ "weight": 0.6,
+ "match": "femdomvc\\.com/video/\\d+/",
+ "icon": "femdomvc.png",
+ "html": {
+  "site": "https://www.femdomvc.com",
+  "search": "https://www.femdomvc.com/search/?q={q}",
+  "searchPage": "https://www.femdomvc.com/search/?q={q}&from_videos={p}",
+  "card": "<div class=\"item ",
+  "href": "href=\"(https://www\\.femdomvc\\.com/video/\\d+/[^\"]+)\"",
+  "title": "title=\"([^\"]+)\"",
+  "thumb": "data-original=\"([^\"]+)\"",
+  "duration": "class=\"duration\">([0-9:]+)<",
+  "views": "class=\"views\">([0-9.,KkMm]+)<"
+ }
+}

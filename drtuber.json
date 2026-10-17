@@ -1,0 +1,20 @@
+{
+ "id": "drtuber",
+ "name": "DrTuber",
+ "version": 1,
+ "adult": true,
+ "weight": 0.6,
+ "match": "drtuber\\.com/video/\\d+/",
+ "icon": "drtuber.png",
+ "html": {
+  "site": "https://www.drtuber.com",
+  "search": "https://www.drtuber.com/search/videos/{qp}",
+  "searchPage": "https://www.drtuber.com/search/videos/{qp}/{p}",
+  "card": "class=\"th ch-video",
+  "href": "href=\"(/video/\\d+/[^\"]+)\"",
+  "title": "alt=\"([^\"]+)\"",
+  "thumb": "<img [^>]*src=\"(https://[^\"]+)\"",
+  "duration": "time_thumb\">\\s*<em>([0-9:]+)<"
+ },
+ "web": true
+}

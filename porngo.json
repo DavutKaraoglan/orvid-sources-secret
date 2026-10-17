@@ -1,0 +1,19 @@
+{
+ "id": "porngo",
+ "name": "PornGo",
+ "version": 1,
+ "adult": true,
+ "weight": 0.6,
+ "match": "porngo\\.com/videos/\\d+/[^\\s\"?#]+",
+ "icon": "porngo.png",
+ "html": {
+  "site": "https://www.porngo.com",
+  "search": "https://www.porngo.com/search/{qp}/",
+  "searchPage": "https://www.porngo.com/search/{qp}/{p}/",
+  "card": "class=\"thumb item",
+  "href": "href=\"(https://www\\.porngo\\.com/videos/\\d+/[^\"]+)\"",
+  "title": "<img src=\"[^\"]+\" alt=\"([^\"]+)\"",
+  "thumb": "<img src=\"([^\"]+)\"",
+  "duration": "thumb__duration\">([^<]+)<"
+ }
+}

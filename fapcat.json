@@ -1,0 +1,19 @@
+{
+ "id": "fapcat",
+ "name": "FapCat",
+ "version": 1,
+ "adult": true,
+ "weight": 0.6,
+ "match": "fapcat\\.com/videos/\\d+/",
+ "icon": "fapcat.png",
+ "html": {
+  "site": "https://www.fapcat.com",
+  "search": "https://www.fapcat.com/search/{qp}/",
+  "searchPage": "https://www.fapcat.com/search/{qp}/?from_videos={p}",
+  "card": "<div class=\"item",
+  "href": "href=\"(https://www\\.fapcat\\.com/videos/\\d+/[^\"]+)\"",
+  "title": "title=\"([^\"]+)\"",
+  "thumb": "data-src=\"([^\"]+)\"",
+  "duration": "class=\"[^\"]*duration[^\"]*\"[^>]*>\\s*(?:<[^>]+>\\s*)*([0-9]{1,2}:[0-9]{2}(?::[0-9]{2})?)"
+ }
+}

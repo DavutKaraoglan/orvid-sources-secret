@@ -1,0 +1,19 @@
+{
+ "id": "zbporn",
+ "name": "ZBPorn",
+ "version": 1,
+ "adult": true,
+ "weight": 0.6,
+ "match": "zbporn\\.com/videos/\\d+/[^\\s\"?#]+",
+ "icon": "zbporn.png",
+ "html": {
+  "site": "https://zbporn.com",
+  "search": "https://zbporn.com/search/{qp}/",
+  "searchPage": "https://zbporn.com/search/{qp}/{p}/",
+  "card": "class=\"th-image\"",
+  "href": "href=\"(https://zbporn\\.com/videos/\\d+/[^\"]+)\"",
+  "title": "title=\"([^\"]+)\"",
+  "thumb": "type=\"image/jpeg\" srcset=\"([^\" ]+)",
+  "duration": ">\\s*(\\d{1,2}:\\d{2}(?::\\d{2})?)\\s*<"
+ }
+}

@@ -1,0 +1,23 @@
+{
+ "id": "thisvid",
+ "name": "ThisVid",
+ "version": 1,
+ "adult": true,
+ "weight": 0.6,
+ "match": "thisvid\\.com/videos/[^\\s\"?#]+",
+ "icon": "thisvid.png",
+ "html": {
+  "site": "https://thisvid.com",
+  "search": "https://thisvid.com/search/?q={q}",
+  "searchPage": "https://thisvid.com/search/{p}/?q={q}",
+  "card": "<a href=\"https://thisvid.com/videos/",
+  "href": "^([^\"]+)\"",
+  "title": "title=\"([^\"]+)\"",
+  "thumb": "data-original=\"([^\"]+)\"",
+  "duration": "class=\"duration\">\\s*([0-9:]+)",
+  "views": ">(\\d+)</span><span class=\"date",
+  "skip": "thumb private",
+  "linkPrefix": "https://thisvid.com/videos/"
+ },
+ "web": true
+}

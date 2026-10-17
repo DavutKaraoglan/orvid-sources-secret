@@ -1,0 +1,20 @@
+{
+ "id": "pornwhite",
+ "name": "PornWhite",
+ "version": 1,
+ "adult": true,
+ "weight": 0.6,
+ "match": "pornwhite\\.com/videos/\\d+/[^\\s\"?#]+",
+ "icon": "pornwhite.png",
+ "html": {
+  "site": "https://www.pornwhite.com",
+  "search": "https://www.pornwhite.com/search/?q={q}",
+  "searchPage": "https://www.pornwhite.com/search/{p}/?q={q}",
+  "card": "itemtype=\"https://schema.org/VideoObject\"",
+  "href": "href=\"(https://www\\.pornwhite\\.com/videos/\\d+/[^\"]+/)\"",
+  "title": "itemprop=\"name\" content=\"([^\"]+)\"",
+  "thumb": "data-original=\"([^\"]+)\"",
+  "duration": "class=\"length\">([0-9:]+)<",
+  "views": "class=\"views\">([0-9.,KkMm]+)<"
+ }
+}

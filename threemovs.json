@@ -1,0 +1,21 @@
+{
+ "id": "threemovs",
+ "name": "3Movs",
+ "version": 1,
+ "adult": true,
+ "weight": 0.6,
+ "match": "3movs\\.com/videos/\\d+/[^\\s\"?#]+",
+ "icon": "threemovs.png",
+ "html": {
+  "site": "https://www.3movs.com",
+  "search": "https://www.3movs.com/search_videos/?q={q}",
+  "searchPage": "https://www.3movs.com/search_videos/?q={q}&from_videos={p}",
+  "card": "<div class=\"item thumb ",
+  "href": "href=\"(https://www\\.3movs\\.com/videos/\\d+/[^\"]+/)\"",
+  "title": "title=\"([^\"]+)\"",
+  "thumb": "data-src=\"([^\"]+)\"",
+  "duration": "class=\"time\">([0-9:]+)<",
+  "views": "icon-eye\"></i>\\s*<span>([0-9.,KkMm]+)<",
+  "paged": true
+ }
+}

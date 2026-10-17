@@ -1,0 +1,20 @@
+{
+ "id": "hqporner",
+ "name": "HQporner",
+ "version": 1,
+ "adult": true,
+ "weight": 0.6,
+ "match": "hqporner\\.com/hdporn/[^\\s\"?#]+\\.html",
+ "icon": "hqporner.png",
+ "html": {
+  "site": "https://hqporner.com",
+  "search": "https://hqporner.com/?q={q}",
+  "searchPage": "https://hqporner.com/?q={q}&p={p}",
+  "card": "<section class=\"box feature\">",
+  "href": "href=\"(/hdporn/[^\"]+\\.html)\"",
+  "title": "class=\"meta-data-title\"><a [^>]*>([^<]+)<",
+  "thumb": "defaultImage\\(\"([^\"]+)\"",
+  "duration": "fa-clock-o meta-data\">([^<]+)<",
+  "iframe": "<iframe[^>]+src=\"((?:https?:)?//[^\"]*mydaddy\\.cc/video/[^\"]+)\""
+ }
+}

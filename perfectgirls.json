@@ -1,0 +1,20 @@
+{
+ "id": "perfectgirls",
+ "name": "PerfectGirls",
+ "version": 1,
+ "adult": true,
+ "weight": 0.6,
+ "match": "perfectgirls\\.xxx/video/\\d+/",
+ "icon": "perfectgirls.png",
+ "html": {
+  "site": "https://www.perfectgirls.xxx",
+  "search": "https://www.perfectgirls.xxx/search/{qp}/",
+  "searchPage": "https://www.perfectgirls.xxx/search/{qp}/{p}/",
+  "card": "item thumb-bl thumb-bl-video",
+  "href": "href=\"(/video/\\d+/)\"",
+  "title": "title=\"([^\"]+)\"",
+  "thumb": "data-original=\"([^\"]+)\"",
+  "duration": "fa-clock-o\"></i>\\s*<span>([0-9:]+)<",
+  "views": "fa-eye\"></i>\\s*<span>([0-9.,KkMm]+)<"
+ }
+}

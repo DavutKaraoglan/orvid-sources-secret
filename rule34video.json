@@ -1,0 +1,19 @@
+{
+ "id": "rule34video",
+ "name": "Rule34Video",
+ "version": 1,
+ "adult": true,
+ "weight": 0.6,
+ "match": "rule34video\\.com/video/\\d+/[^\\s\"?#]+",
+ "icon": "rule34video.png",
+ "html": {
+  "site": "https://rule34video.com",
+  "search": "https://rule34video.com/search/{qp}/",
+  "searchPage": "https://rule34video.com/search/{qp}/{p}/",
+  "card": "class=\"item thumb video_",
+  "href": "href=\"(https://rule34video\\.com/video/\\d+/[^\"]+)\"",
+  "title": "title=\"([^\"]+)\"",
+  "thumb": "<img class=\"thumb\" src=\"([^\"]+)\"",
+  "duration": ">\\s*(\\d{1,2}:\\d{2}(?::\\d{2})?)\\s*<"
+ }
+}

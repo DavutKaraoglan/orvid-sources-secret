@@ -1,0 +1,18 @@
+{
+ "id": "megatube",
+ "name": "MegaTube",
+ "version": 1,
+ "adult": true,
+ "weight": 0.6,
+ "match": "megatube\\.xxx/videos/\\d+/",
+ "icon": "megatube.png",
+ "html": {
+  "site": "https://www.megatube.xxx",
+  "search": "https://www.megatube.xxx/search/{qp}/",
+  "searchPage": "https://www.megatube.xxx/search/{qp}/?from_videos={p}",
+  "card": "<div class=\"item",
+  "href": "href=\"(https://www\\.megatube\\.xxx/videos/\\d+/[^\"]+)\"",
+  "title": "<a href=\"[^\"]+\"\\s+title=\"([^\"]+)\"",
+  "thumb": "src=\"(https://img01\\.mt-static\\.com/[^\"]+)\""
+ }
+}

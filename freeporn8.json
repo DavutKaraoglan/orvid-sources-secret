@@ -1,0 +1,20 @@
+{
+ "id": "freeporn8",
+ "name": "FreePorn8",
+ "version": 1,
+ "adult": true,
+ "weight": 0.6,
+ "match": "freeporn8\\.com/videos/\\d+/[^\\s\"?#]+",
+ "icon": "freeporn8.png",
+ "html": {
+  "site": "https://www.freeporn8.com",
+  "search": "https://www.freeporn8.com/search/?q={q}",
+  "searchPage": "https://www.freeporn8.com/search/?q={q}&from_videos={p}",
+  "card": "<div class=\"item  \">",
+  "href": "href=\"(https://www\\.freeporn8\\.com/videos/\\d+/[^\"]+/)\"",
+  "title": "title=\"([^\"]+)\"",
+  "thumb": "src=\"(https://www\\.freeporn8\\.com/contents/videos_screenshots/[^\"]+)\"",
+  "duration": "class=\"duration\">([0-9:]+)<",
+  "paged": true
+ }
+}

@@ -1,0 +1,20 @@
+{
+ "id": "porndoe",
+ "name": "PornDoe",
+ "version": 1,
+ "adult": true,
+ "weight": 0.6,
+ "match": "porndoe\\.com/watch/[a-z0-9]+",
+ "icon": "porndoe.png",
+ "html": {
+  "site": "https://porndoe.com",
+  "search": "https://porndoe.com/search?keywords={q}",
+  "searchPage": "https://porndoe.com/search?keywords={q}&page={p}",
+  "card": "class=\"video-item\" data-video-item",
+  "href": "href=\"(/watch/[a-z0-9]+)\"",
+  "title": "aria-label=\"([^\"]+)\"",
+  "thumb": "data-src=\"(https://[^\"]+)\"",
+  "duration": "data-duration=\"([0-9:]+)\""
+ },
+ "web": true
+}

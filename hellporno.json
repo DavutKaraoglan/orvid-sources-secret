@@ -1,0 +1,20 @@
+{
+ "id": "hellporno",
+ "name": "HellPorno",
+ "version": 1,
+ "adult": true,
+ "weight": 0.6,
+ "match": "hellporno\\.com/videos/[^\\s\"?#]+/",
+ "icon": "hellporno.png",
+ "html": {
+  "site": "https://hellporno.com",
+  "search": "https://hellporno.com/search/?q={q}",
+  "searchPage": "https://hellporno.com/search/{p}/?q={q}",
+  "card": "class=\"video-thumb\"",
+  "href": "href=\"(https://hellporno\\.com/videos/[^\"]+/)\"",
+  "title": "class=\"title\">([^<]+)<",
+  "thumb": "<img alt=\"[^\"]*\" src=\"([^\"]+)\"",
+  "duration": "class=\"time\">([0-9:]+)<",
+  "views": "class=\"info\"><span>(\\d+)"
+ }
+}

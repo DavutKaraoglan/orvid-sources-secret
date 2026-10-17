@@ -1,0 +1,19 @@
+{
+ "id": "bravotube",
+ "name": "BravoTube",
+ "version": 1,
+ "adult": true,
+ "weight": 0.6,
+ "match": "bravotube\\.net/videos/[^\\s\"?#]+/",
+ "icon": "bravotube.png",
+ "html": {
+  "site": "https://www.bravotube.net",
+  "search": "https://www.bravotube.net/search/?q={q}",
+  "searchPage": "https://www.bravotube.net/search/{p}/?q={q}",
+  "card": "class=\"video_block_",
+  "href": "href=\"((?:https://www\\.bravotube\\.net)?/videos/[^\"]+/)\"",
+  "title": "alt=\"([^\"]+)\"",
+  "thumb": "<img src=\"([^\"]+)\"",
+  "duration": "class=\"time\">([0-9:]+)<"
+ }
+}

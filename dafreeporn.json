@@ -1,0 +1,19 @@
+{
+ "id": "dafreeporn",
+ "name": "DaFreePorn",
+ "version": 1,
+ "adult": true,
+ "weight": 0.6,
+ "match": "dafreeporn\\.com/videos/\\d+/",
+ "icon": "dafreeporn.png",
+ "html": {
+  "site": "https://www.dafreeporn.com",
+  "search": "https://www.dafreeporn.com/search/{qp}/",
+  "searchPage": "https://www.dafreeporn.com/search/{qp}/?from_videos={p}",
+  "card": "<div class=\"item",
+  "href": "href=\"(https://www\\.dafreeporn\\.com/videos/\\d+/[^\"]+)\"",
+  "title": "title=\"([^\"]+)\"",
+  "thumb": "src=\"(https://www\\.dafreeporn\\.com/contents/videos_screenshots/[^\"]+)\"",
+  "duration": "class=\"duration\">([0-9:]+)<"
+ }
+}

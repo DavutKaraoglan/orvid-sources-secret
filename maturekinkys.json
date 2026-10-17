@@ -1,0 +1,19 @@
+{
+ "id": "maturekinkys",
+ "name": "MatureKinkys",
+ "version": 1,
+ "adult": true,
+ "weight": 0.6,
+ "match": "maturekinkys\\.com/video/\\d+/",
+ "icon": "maturekinkys.png",
+ "html": {
+  "site": "https://maturekinkys.com",
+  "search": "https://maturekinkys.com/search/{qp}/",
+  "searchPage": "https://maturekinkys.com/search/{qp}/?from_videos={p}",
+  "card": "data-fq-video-card=\"",
+  "href": "href=\"(https://maturekinkys\\.com/video/\\d+/[^\"]+)\"",
+  "title": "title=\"([^\"]+)\"",
+  "thumb": "data-original=\"([^\"]+)\"",
+  "duration": "class=\"[^\"]*duration[^\"]*\"[^>]*>\\s*(?:<[^>]+>\\s*)*([0-9]{1,2}:[0-9]{2}(?::[0-9]{2})?)"
+ }
+}

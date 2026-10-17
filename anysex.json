@@ -1,0 +1,20 @@
+{
+ "id": "anysex",
+ "name": "AnySex",
+ "version": 1,
+ "adult": true,
+ "weight": 0.6,
+ "match": "anysex\\.com/video/\\d+/",
+ "icon": "anysex.png",
+ "html": {
+  "site": "https://anysex.com",
+  "search": "https://anysex.com/search/?q={q}",
+  "searchPage": "https://anysex.com/search/?q={q}&from_videos={p}",
+  "card": "<div class=\"item",
+  "href": "href=\"(https://anysex\\.com/video/\\d+/[^\"]+)\"",
+  "title": "alt=\"([^\"]+)\"",
+  "thumb": "src=\"(https://i\\.anysex\\.com/videos_screenshots/[^\"]+)\"",
+  "duration": "class=\"duration\"[^>]*>\\s*([0-9:]+)",
+  "views": "data-views=\"([0-9]+)\""
+ }
+}

@@ -1,0 +1,19 @@
+{
+ "id": "gayporntube",
+ "name": "GayPornTube",
+ "version": 1,
+ "adult": true,
+ "weight": 0.6,
+ "match": "gayporntube\\.com/video/\\d+/[^\\s\"?#]+",
+ "icon": "gayporntube.png",
+ "html": {
+  "site": "https://www.gayporntube.com",
+  "search": "https://www.gayporntube.com/search/?q={q}",
+  "searchPage": "https://www.gayporntube.com/search/?q={q}&page={p}",
+  "card": "class=\"item item-col\"",
+  "href": "href=\"(https://www\\.gayporntube\\.com/video/\\d+/[^\"]+)\"",
+  "title": "title=\"([^\"]+)\"",
+  "thumb": "data-src=\"([^\"]+)\"",
+  "duration": ">\\s*(\\d{1,2}:\\d{2}(?::\\d{2})?)\\s*<"
+ }
+}

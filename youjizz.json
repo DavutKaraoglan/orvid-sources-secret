@@ -1,0 +1,20 @@
+{
+ "id": "youjizz",
+ "name": "YouJizz",
+ "version": 1,
+ "adult": true,
+ "weight": 0.6,
+ "match": "youjizz\\.com/videos/[^\"'\\s?#]+-\\d+\\.html",
+ "icon": "youjizz.png",
+ "html": {
+  "site": "https://www.youjizz.com",
+  "search": "https://www.youjizz.com/search/{qp}-1.html",
+  "searchPage": "https://www.youjizz.com/search/{qp}-{p}.html",
+  "card": "class=\"video-thumb\"",
+  "href": "href=\"(/videos/[^\"]+\\.html)\"",
+  "title": "class=\"agego-content-title\">([^<]+)<",
+  "thumb": "data-original=\"([^\"]+)\"",
+  "duration": "fa-clock-o\"></i>&nbsp;([0-9:]+)<",
+  "views": "class=\"format-views\">([0-9]+)<"
+ }
+}

@@ -1,0 +1,19 @@
+{
+ "id": "xxxymovies",
+ "name": "XXXYMovies",
+ "version": 1,
+ "adult": true,
+ "weight": 0.6,
+ "match": "xxxymovies\\.com/videos/\\d+/[^\\s\"?#]+",
+ "icon": "xxxymovies.png",
+ "html": {
+  "site": "https://xxxymovies.com",
+  "search": "https://xxxymovies.com/search/{qp}/",
+  "searchPage": "https://xxxymovies.com/search/{qp}/{p}/",
+  "card": "<div class=\"item ",
+  "href": "href=\"(https://xxxymovies\\.com/videos/\\d+/[^\"]+)\"",
+  "title": "title=\"([^\"]+)\"",
+  "thumb": "data-original=\"([^\"]+)\"",
+  "duration": ">\\s*(\\d{1,2}:\\d{2}(?::\\d{2})?)\\s*<"
+ }
+}

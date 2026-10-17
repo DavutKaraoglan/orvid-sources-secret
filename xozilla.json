@@ -1,0 +1,18 @@
+{
+ "id": "xozilla",
+ "name": "Xozilla",
+ "version": 1,
+ "adult": true,
+ "weight": 0.6,
+ "match": "xozilla\\.com/videos/\\d+/",
+ "icon": "xozilla.png",
+ "html": {
+  "site": "https://www.xozilla.com",
+  "search": "https://www.xozilla.com/search/{qp}/",
+  "searchPage": "https://www.xozilla.com/search/{qp}/?from_videos={p}",
+  "card": "<a href=\"https://www.xozilla.com/videos/",
+  "href": "href=\"(https://www\\.xozilla\\.com/videos/\\d+/[^\"]+)\"",
+  "title": "class=\"title\">([^<]+)<",
+  "thumb": "data-original=\"([^\"]+)\""
+ }
+}

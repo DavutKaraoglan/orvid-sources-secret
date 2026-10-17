@@ -1,0 +1,20 @@
+{
+ "id": "shooshtime",
+ "name": "ShooshTime",
+ "version": 1,
+ "adult": true,
+ "weight": 0.6,
+ "match": "shooshtime\\.com/videos/\\d+/[^\\s\"?#]+",
+ "icon": "shooshtime.png",
+ "html": {
+  "site": "https://shooshtime.com",
+  "search": "https://shooshtime.com/search/?q={q}",
+  "searchPage": "https://shooshtime.com/search/?q={q}&from_videos={p}",
+  "card": "<div class=\"item custom-sort-",
+  "href": "href=\"(https://shooshtime\\.com/videos/\\d+/[^\"]+/)\"",
+  "title": "title=\"([^\"]+)\"",
+  "thumb": "data-src=\"([^\"]+)\"",
+  "duration": "class=\"duration\">\\s*([0-9:]+)",
+  "paged": true
+ }
+}

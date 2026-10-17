@@ -1,0 +1,19 @@
+{
+ "id": "pornhat",
+ "name": "Pornhat",
+ "version": 1,
+ "adult": true,
+ "weight": 0.6,
+ "match": "pornhat\\.com/video/[^\\s\"?#]+/",
+ "icon": "pornhat.png",
+ "html": {
+  "site": "https://www.pornhat.com",
+  "search": "https://www.pornhat.com/search/{qp}/",
+  "searchPage": "https://www.pornhat.com/search/{qp}/{p}/",
+  "card": "class=\"item thumb-bl",
+  "href": "href=\"((?:https://www\\.pornhat\\.com)?/video/[^\"]+/)\"",
+  "title": "href=\"[^\"]*\" title=\"([^\"]+)\"",
+  "thumb": "data-original=\"([^\"]+)\"",
+  "duration": ">\\s*(\\d{1,2}:\\d{2}(?::\\d{2})?)\\s*<"
+ }
+}

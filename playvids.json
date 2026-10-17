@@ -1,0 +1,19 @@
+{
+ "id": "playvids",
+ "name": "PlayVids",
+ "version": 1,
+ "adult": true,
+ "weight": 0.6,
+ "match": "playvids\\.com/[A-Za-z0-9_-]{11}/[a-z0-9-]+",
+ "icon": "playvids.png",
+ "html": {
+  "site": "https://www.playvids.com",
+  "search": "https://www.playvids.com/videos?qry={q}",
+  "searchPage": "https://www.playvids.com/videos?qry={q}&page={p}",
+  "card": "class=\"card thumbs_rotate",
+  "href": "href=\"(/[A-Za-z0-9_-]{11}/[a-z0-9-]+)\"",
+  "title": "alt=\"([^\"]+)\"",
+  "thumb": "src=\"(https://cdn-img1\\.playvids\\.com/[^\"]+)\"",
+  "duration": "class=\"duration\">([0-9:]+)<"
+ }
+}
