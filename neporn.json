@@ -1,0 +1,21 @@
+{
+ "id": "neporn",
+ "name": "NePorn",
+ "rank": 48,
+ "version": 1,
+ "adult": true,
+ "weight": 0.6,
+ "match": "neporn\\.com/video/\\d+/",
+ "icon": "neporn.png",
+ "html": {
+  "site": "https://neporn.com",
+  "search": "https://neporn.com/search/{qp}/",
+  "searchPage": "https://neporn.com/search/{qp}/?from_videos={p}",
+  "card": "<div class=\"item",
+  "href": "href=\"(https://neporn\\.com/video/[^\"]+)\"",
+  "title": "title=\"([^\"]+)\"",
+  "thumb": "src=\"(https://[^\"]+\\.jpg)\"",
+  "duration": "class=\"[^\"]*duration[^\"]*\"[^>]*>\\s*(?:<[^>]+>\\s*)*([0-9]{1,2}:[0-9]{2}(?::[0-9]{2})?)",
+  "referer": "https://neporn.com/"
+ }
+}

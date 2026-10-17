@@ -1,0 +1,21 @@
+{
+ "id": "fapgoat",
+ "name": "FapGoat",
+ "rank": 49,
+ "version": 1,
+ "adult": true,
+ "weight": 0.6,
+ "match": "fapgoat\\.com/video/\\d+/",
+ "icon": "fapgoat.png",
+ "html": {
+  "site": "https://fapgoat.com",
+  "search": "https://fapgoat.com/search/{qp}/",
+  "searchPage": "https://fapgoat.com/search/{qp}/?from_videos={p}",
+  "card": "class=\"thumb item",
+  "href": "href=\"(https://fapgoat\\.com/video/[^\"]+)\"",
+  "title": "title=\"([^\"]+)\"",
+  "thumb": "src=\"(https://[^\"]+\\.jpg)\"",
+  "duration": "class=\"[^\"]*duration[^\"]*\"[^>]*>\\s*(?:<[^>]+>\\s*)*([0-9]{1,2}:[0-9]{2}(?::[0-9]{2})?)",
+  "referer": "https://fapgoat.com/"
+ }
+}

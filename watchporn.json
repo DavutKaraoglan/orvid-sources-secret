@@ -1,0 +1,20 @@
+{
+ "id": "watchporn",
+ "name": "WatchPorn",
+ "rank": 46,
+ "version": 1,
+ "adult": true,
+ "weight": 0.6,
+ "match": "watchporn\\.to/video/\\d+/",
+ "icon": "watchporn.png",
+ "html": {
+  "site": "https://watchporn.to",
+  "search": "https://watchporn.to/search/{qp}/",
+  "searchPage": "https://watchporn.to/search/{qp}/?from_videos={p}",
+  "card": "class=\"thumb item wp-card",
+  "href": "href=\"(https://watchporn\\.to/video/[^\"]+)\"",
+  "title": "title=\"([^\"]+)\"",
+  "thumb": "src=\"(https://[^\"]+\\.jpg)\"",
+  "duration": "class=\"wp-dur\">([0-9:]+)<"
+ }
+}

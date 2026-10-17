@@ -1,0 +1,20 @@
+{
+ "id": "cherrygasp",
+ "name": "CherryGasp",
+ "rank": 50,
+ "version": 1,
+ "adult": true,
+ "weight": 0.6,
+ "match": "cherrygasp\\.com/video/[a-z0-9-]+/",
+ "icon": "cherrygasp.png",
+ "html": {
+  "site": "https://cherrygasp.com",
+  "search": "https://cherrygasp.com/search/{qp}/",
+  "searchPage": "https://cherrygasp.com/search/{qp}/?from_videos={p}",
+  "card": "<div class=\"item",
+  "href": "href=\"(https://cherrygasp\\.com/video/[^\"]+)\"",
+  "title": "title=\"([^\"]+)\"",
+  "thumb": "data-original=\"([^\"]+)\"",
+  "duration": "class=\"[^\"]*duration[^\"]*\"[^>]*>\\s*(?:<[^>]+>\\s*)*([0-9]{1,2}:[0-9]{2}(?::[0-9]{2})?)"
+ }
+}
