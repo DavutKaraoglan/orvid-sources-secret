@@ -1,0 +1,18 @@
+{
+ "id": "hentaihaven",
+ "name": "HentaiHaven",
+ "version": 1,
+ "adult": true,
+ "weight": 0.6,
+ "match": "hentaihaven\\.xxx/watch/[^\\s\\\"?#]+",
+ "icon": "hentaihaven.png",
+ "html": {
+  "site": "https://hentaihaven.xxx",
+  "search": "https://hentaihaven.xxx/?s={q}",
+  "searchPage": "https://hentaihaven.xxx/?s={q}",
+  "card": "<div class=\"block",
+  "href": "href=\"((?:https?://(?:www\\.)?hentaihaven\\.xxx)?/watch/[^\"]+)\"",
+  "title": "alt=\"([^\"]+)\"",
+  "thumb": "src=\"(https?://[^\"]+\\.(?:jpe?g|webp|png)[^\"]*)\""
+ }
+}
