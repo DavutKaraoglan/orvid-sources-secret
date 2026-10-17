@@ -1,0 +1,19 @@
+{
+ "id": "transvids",
+ "name": "Transvids",
+ "version": 1,
+ "adult": true,
+ "weight": 0.6,
+ "match": "transvids\\.tv/videos/\\d+",
+ "icon": "transvids.png",
+ "html": {
+  "site": "https://www.transvids.tv",
+  "search": "https://www.transvids.tv/?s={q}",
+  "searchPage": "https://www.transvids.tv/?s={q}",
+  "card": "<div class=\"item",
+  "href": "href=\"((?:https?://(?:www\\.)?transvids\\.tv)?/videos/[^\"]+)\"",
+  "title": "title=\"([^\"]+)\"",
+  "thumb": "data-original=\"(https?://[^\"]+\\.(?:jpe?g|webp|png)[^\"]*)\"",
+  "duration": "class=\"[^\"]*duration[^\"]*\"[^>]*>\\s*(?:<[^>]+>\\s*)*([0-9]{1,2}:[0-9]{2}(?::[0-9]{2})?)"
+ }
+}

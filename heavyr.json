@@ -1,0 +1,19 @@
+{
+ "id": "heavyr",
+ "name": "Heavy-r",
+ "version": 1,
+ "adult": true,
+ "weight": 0.6,
+ "match": "heavy\\-r\\.com/video/\\d+",
+ "icon": "heavyr.png",
+ "html": {
+  "site": "https://www.heavy-r.com",
+  "search": "https://www.heavy-r.com/search/{qp}/",
+  "searchPage": "https://www.heavy-r.com/search/{qp}/",
+  "card": "<div class=\"col-xs-12 sr",
+  "href": "href=\"((?:https?://(?:www\\.)?heavy\\-r\\.com)?/video/[^\"]+)\"",
+  "title": "title=\"([^\"]+)\"",
+  "thumb": "src=\"(https?://[^\"]+\\.(?:jpe?g|webp|png)[^\"]*)\"",
+  "duration": "class=\"[^\"]*duration[^\"]*\"[^>]*>\\s*(?:<[^>]+>\\s*)*([0-9]{1,2}:[0-9]{2}(?::[0-9]{2})?)"
+ }
+}

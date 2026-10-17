@@ -1,0 +1,18 @@
+{
+ "id": "transflix",
+ "name": "Transflix",
+ "version": 1,
+ "adult": true,
+ "weight": 0.6,
+ "match": "transflix\\.net/video/[^\\s\\\"?#]+",
+ "icon": "transflix.png",
+ "html": {
+  "site": "https://transflix.net",
+  "search": "https://transflix.net/search?q={q}",
+  "searchPage": "https://transflix.net/search?q={q}&page={p}",
+  "card": "<div class=\"item",
+  "href": "href=\"((?:https?://(?:www\\.)?transflix\\.net)?/video/[^\"]+)\"",
+  "title": "title=\"([^\"]+)\"",
+  "thumb": "data-original=\"(https?://[^\"]+\\.(?:jpe?g|webp|png)[^\"]*)\""
+ }
+}

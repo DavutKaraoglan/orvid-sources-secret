@@ -1,0 +1,21 @@
+{
+ "id": "xxxi",
+ "name": "Xxxi",
+ "version": 1,
+ "adult": true,
+ "weight": 0.6,
+ "match": "xxxi\\.porn/video/\\d+",
+ "icon": "xxxi.png",
+ "html": {
+  "site": "https://xxxi.porn",
+  "search": "https://xxxi.porn/search/{qp}/",
+  "searchPage": "https://xxxi.porn/search/{qp}/?from_videos={p}",
+  "card": "<div class=\"item",
+  "href": "href=\"((?:https?://(?:www\\.)?xxxi\\.porn)?/video/[^\"]+)\"",
+  "title": "title=\"([^\"]+)\"",
+  "thumb": "data-webp=\"(https?://[^\"]+\\.(?:jpe?g|webp|png)[^\"]*)\"",
+  "duration": "class=\"[^\"]*duration[^\"]*\"[^>]*>\\s*(?:<[^>]+>\\s*)*([0-9]{1,2}:[0-9]{2}(?::[0-9]{2})?)",
+  "referer": "https://xxxi.porn/",
+  "paged": true
+ }
+}

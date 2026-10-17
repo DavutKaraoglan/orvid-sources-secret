@@ -1,0 +1,21 @@
+{
+ "id": "xxxtube",
+ "name": "X-X-X.tube",
+ "version": 1,
+ "adult": true,
+ "weight": 0.6,
+ "match": "x\\-x\\-x\\.tube/videos/\\d+",
+ "icon": "xxxtube.png",
+ "html": {
+  "site": "https://x-x-x.tube",
+  "search": "https://x-x-x.tube/search/{qp}/",
+  "searchPage": "https://x-x-x.tube/search/{qp}/?from_videos={p}",
+  "card": "<div class=\"thumb-inner",
+  "href": "href=\"((?:https?://(?:www\\.)?x\\-x\\-x\\.tube)?/videos/[^\"]+)\"",
+  "title": "title=\"([^\"]+)\"",
+  "thumb": "src=\"(https?://[^\"]+\\.(?:jpe?g|webp|png)[^\"]*)\"",
+  "duration": "class=\"[^\"]*duration[^\"]*\"[^>]*>\\s*(?:<[^>]+>\\s*)*([0-9]{1,2}:[0-9]{2}(?::[0-9]{2})?)",
+  "referer": "https://x-x-x.tube/",
+  "paged": true
+ }
+}
