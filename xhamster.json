@@ -2,5 +2,10 @@
  "id": "xhamster",
  "name": "xHamster",
  "engine": "xhamster",
- "adult": true
+ "version": 2,
+ "adult": true,
+ "weight": 0.6,
+ "match": "xhamster\\d*\\.(?:com|one|desi)/videos/[A-Za-z0-9-]+",
+ "icon": "xhamster.png",
+ "script": "xhamster.js"
 }

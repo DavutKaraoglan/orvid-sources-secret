@@ -2,5 +2,10 @@
  "id": "redgifs",
  "name": "RedGIFs",
  "engine": "redgifs",
- "adult": true
+ "version": 2,
+ "adult": true,
+ "weight": 0.5,
+ "match": "redgifs\\.com/(?:watch|ifr)/([A-Za-z]+)",
+ "icon": "redgifs.png",
+ "script": "redgifs.js"
 }

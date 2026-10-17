@@ -2,5 +2,10 @@
  "id": "xvideos",
  "name": "XVIDEOS",
  "engine": "xvideos",
- "adult": true
+ "version": 2,
+ "adult": true,
+ "weight": 0.6,
+ "match": "xvideos\\.com/video\\.?([a-z0-9]+)(/[^\\s\"?#]*)?",
+ "icon": "xvideos.png",
+ "script": "xvideos.js"
 }

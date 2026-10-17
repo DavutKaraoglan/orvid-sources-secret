@@ -2,5 +2,10 @@
  "id": "tnaflix",
  "name": "TNAFlix",
  "engine": "tnaflix",
- "adult": true
+ "version": 2,
+ "adult": true,
+ "weight": 0.6,
+ "match": "tnaflix\\.com/[^\\s\"]+/video\\d+",
+ "icon": "tnaflix.png",
+ "script": "tnaflix.js"
 }

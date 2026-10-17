@@ -2,5 +2,10 @@
  "id": "aylo",
  "name": "Pornhub",
  "engine": "aylo",
- "adult": true
+ "version": 2,
+ "adult": true,
+ "weight": 0.6,
+ "match": "pornhub\\.com/view_video\\.php\\?viewkey=([A-Za-z0-9]+)",
+ "icon": "aylo.png",
+ "script": "aylo.js"
 }

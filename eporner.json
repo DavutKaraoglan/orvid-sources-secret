@@ -2,5 +2,10 @@
  "id": "eporner",
  "name": "Eporner",
  "engine": "eporner",
- "adult": true
+ "version": 2,
+ "adult": true,
+ "weight": 0.6,
+ "match": "eporner\\.com/(?:video-|hd-porn/)([A-Za-z0-9]+)",
+ "icon": "eporner.png",
+ "script": "eporner.js"
 }

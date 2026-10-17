@@ -2,5 +2,10 @@
  "id": "pornone",
  "name": "PornOne",
  "engine": "pornone",
- "adult": true
+ "version": 2,
+ "adult": true,
+ "weight": 0.6,
+ "match": "https://pornone\\.com/[^\\s\"?#]+/\\d+/?",
+ "icon": "pornone.png",
+ "script": "pornone.js"
 }
