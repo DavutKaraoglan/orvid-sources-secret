@@ -1,5 +1,6 @@
 {
  "id": "pornone",
  "name": "PornOne",
- "engine": "pornone"
+ "engine": "pornone",
+ "adult": true
 }

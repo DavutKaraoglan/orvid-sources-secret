@@ -1,5 +1,6 @@
 {
  "id": "xvideos",
  "name": "XVIDEOS",
- "engine": "xvideos"
+ "engine": "xvideos",
+ "adult": true
 }

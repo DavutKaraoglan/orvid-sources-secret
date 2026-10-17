@@ -1,5 +1,6 @@
 {
  "id": "redgifs",
  "name": "RedGIFs",
- "engine": "redgifs"
+ "engine": "redgifs",
+ "adult": true
 }

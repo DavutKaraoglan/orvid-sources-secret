@@ -1,5 +1,6 @@
 {
  "id": "txxx",
  "name": "Txxx",
- "engine": "txxx"
+ "engine": "txxx",
+ "adult": true
 }

@@ -1,5 +1,6 @@
 {
  "id": "boyfriendtv",
  "name": "BoyfriendTV",
- "engine": "boyfriendtv"
+ "engine": "boyfriendtv",
+ "adult": true
 }

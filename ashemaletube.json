@@ -1,5 +1,6 @@
 {
  "id": "ashemaletube",
  "name": "aShemaleTube",
- "engine": "ashemaletube"
+ "engine": "ashemaletube",
+ "adult": true
 }

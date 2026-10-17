@@ -1,5 +1,6 @@
 {
  "id": "tnaflix",
  "name": "TNAFlix",
- "engine": "tnaflix"
+ "engine": "tnaflix",
+ "adult": true
 }

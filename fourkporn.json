@@ -1,5 +1,6 @@
 {
  "id": "fourkporn",
  "name": "4kporn",
- "engine": "fourkporn"
+ "engine": "fourkporn",
+ "adult": true
 }

@@ -1,5 +1,6 @@
 {
  "id": "aylo",
  "name": "Pornhub",
- "engine": "aylo"
+ "engine": "aylo",
+ "adult": true
 }

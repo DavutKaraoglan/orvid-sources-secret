@@ -1,5 +1,6 @@
 {
  "id": "xhamster",
  "name": "xHamster",
- "engine": "xhamster"
+ "engine": "xhamster",
+ "adult": true
 }
