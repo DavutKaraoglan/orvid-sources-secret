@@ -1,0 +1,18 @@
+{
+ "id": "watchhentai",
+ "name": "Watch Hentai",
+ "version": 1,
+ "adult": true,
+ "weight": 0.6,
+ "match": "watchhentai\\.net/videos/[^\\s\\\"?#]+",
+ "icon": "watchhentai.png",
+ "html": {
+  "site": "https://watchhentai.net",
+  "search": "https://watchhentai.net/?k={q}",
+  "searchPage": "https://watchhentai.net/?k={q}",
+  "card": "<div class=\"see play1",
+  "href": "href=\"((?:https?://(?:www\\.)?watchhentai\\.net)?/videos/[^\"]+)\"",
+  "title": "title=\"([^\"]+)\"",
+  "thumb": "data-src=\"(https?://[^\"]+\\.(?:jpe?g|webp|png)[^\"]*)\""
+ }
+}
