@@ -1,0 +1,10 @@
+{
+ "id": "nonktube",
+ "name": "NonkTube",
+ "version": 1,
+ "adult": true,
+ "weight": 0.6,
+ "match": "nonktube\\.com/video/[^\\s\"?#]+",
+ "icon": "nonktube.png",
+ "script": "nonktube.js"
+}

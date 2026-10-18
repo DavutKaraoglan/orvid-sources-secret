@@ -1,0 +1,22 @@
+{
+ "id": "ratxxx",
+ "name": "Rat.xxx",
+ "version": 1,
+ "adult": true,
+ "weight": 0.6,
+ "match": "rat\\.xxx/videos/\\d+/[^\\s\\\"?#]+",
+ "icon": "ratxxx.png",
+ "html": {
+  "site": "https://www.rat.xxx",
+  "search": "https://www.rat.xxx/search/{qp}/",
+  "searchPage": "https://www.rat.xxx/search/{qp}/{p}/",
+  "card": "class=\"th-image-link\"",
+  "href": "href=\"(https://www\\.rat\\.xxx/videos/\\d+/[^\"]+)\"",
+  "title": "title=\"([^\"]+)\"",
+  "thumb": "<img [^>]*\\bsrc=\"(https://cdn\\d*\\.rat\\.xxx/[^\"]+\\.jpg)\"",
+  "duration": "th-duration\">([0-9:]+)<",
+  "referer": "https://www.rat.xxx/",
+  "paged": true,
+  "followRedirect": true
+ }
+}

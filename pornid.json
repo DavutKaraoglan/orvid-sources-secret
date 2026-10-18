@@ -1,0 +1,22 @@
+{
+ "id": "pornid",
+ "name": "PornID",
+ "version": 1,
+ "adult": true,
+ "weight": 0.6,
+ "match": "pornid\\.xxx/[^\\s\\\"?#]+\\.html",
+ "icon": "pornid.png",
+ "html": {
+  "site": "https://www.pornid.xxx",
+  "search": "https://www.pornid.xxx/search/{qp}/",
+  "searchPage": "https://www.pornid.xxx/search/{qp}/{p}/",
+  "card": "<div class=\"preview\">",
+  "href": "<a href=\"(https://www\\.pornid\\.xxx/[^\"]+\\.html)\"",
+  "title": "<a href=\"https://www\\.pornid\\.xxx/[^\"]+\\.html\" title=\"([^\"]+)\"",
+  "thumb": "<img [^>]*\\bsrc=\"(https://cdn\\d*\\.pornid\\.xxx/[^\"]+\\.jpg)\"",
+  "duration": "class=\"duration\">([0-9:]+)<",
+  "referer": "https://www.pornid.xxx/",
+  "paged": true,
+  "followRedirect": true
+ }
+}

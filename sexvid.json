@@ -1,0 +1,22 @@
+{
+ "id": "sexvid",
+ "name": "SexVid",
+ "version": 1,
+ "adult": true,
+ "weight": 0.6,
+ "match": "sexvid\\.xxx/[^\\s\\\"?#]+\\.html",
+ "icon": "sexvid.png",
+ "html": {
+  "site": "https://www.sexvid.xxx",
+  "search": "https://www.sexvid.xxx/s/{qp}/",
+  "searchPage": "https://www.sexvid.xxx/s/{qp}/{p}/",
+  "card": "class=\"thumb th\"",
+  "href": "href=\"(https://www\\.sexvid\\.xxx/[^\"]+\\.html)\"",
+  "title": "title=\"([^\"]+)\"",
+  "thumb": "<img [^>]*\\bsrc=\"(https://cdn\\d*\\.sexvid\\.xxx/[^\"]+\\.jpg)\"",
+  "duration": "icon-time\"></i><span>([0-9:]+)<",
+  "referer": "https://www.sexvid.xxx/",
+  "paged": true,
+  "followRedirect": true
+ }
+}

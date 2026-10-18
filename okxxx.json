@@ -1,0 +1,20 @@
+{
+ "id": "okxxx",
+ "name": "OK.XXX",
+ "version": 1,
+ "adult": true,
+ "weight": 0.6,
+ "match": "ok\\.xxx/video/\\d+/?",
+ "icon": "okxxx.png",
+ "html": {
+  "site": "https://ok.xxx",
+  "search": "https://ok.xxx/search/{qp}/",
+  "searchPage": "https://ok.xxx/search/{qp}/{p}/",
+  "card": "class=\"thumb thumb-video\"",
+  "href": "<a href=\"(/video/\\d+/)\"",
+  "title": "<a href=\"/video/\\d+/\" title=\"([^\"]+)\"",
+  "thumb": "data-original=\"([^\"]+)\"",
+  "referer": "https://ok.xxx/",
+  "paged": true
+ }
+}

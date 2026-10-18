@@ -1,0 +1,22 @@
+{
+ "id": "hdtube",
+ "name": "HDTube",
+ "version": 1,
+ "adult": true,
+ "weight": 0.6,
+ "match": "hdtube\\.porn/videos/[^\\s\\\"?#]+",
+ "icon": "hdtube.png",
+ "html": {
+  "site": "https://www.hdtube.porn",
+  "search": "https://www.hdtube.porn/search/{qp}/",
+  "searchPage": "https://www.hdtube.porn/search/{qp}/{p}/",
+  "card": "cards__item",
+  "href": "class=\"card__title\" href=\"([^\"]+)\"",
+  "title": "class=\"card__title\" href=\"[^\"]+\" title=\"([^\"]+)\"",
+  "thumb": "class=\"card__img\"[^>]*\\bsrc=\"([^\"]+)\"",
+  "duration": "card__flag\">([0-9:]+)<",
+  "referer": "https://www.hdtube.porn/",
+  "paged": true,
+  "followRedirect": true
+ }
+}

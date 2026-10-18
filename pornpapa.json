@@ -1,0 +1,22 @@
+{
+ "id": "pornpapa",
+ "name": "PornPapa",
+ "version": 1,
+ "adult": true,
+ "weight": 0.6,
+ "match": "pornpapa\\.com/videos/\\d+/[^\\s\\\"?#]+",
+ "icon": "pornpapa.png",
+ "html": {
+  "site": "https://www.pornpapa.com",
+  "search": "https://www.pornpapa.com/search/{qp}/",
+  "searchPage": "https://www.pornpapa.com/search/{qp}/{p}/",
+  "card": "class=\"thumb item",
+  "href": "href=\"((?:https?://www\\.pornpapa\\.com)?/videos/\\d+/[^\"]+)\" class=\"thumb__top",
+  "title": "thumb__title\">\\s*<span>([^<]+)",
+  "thumb": "thumb__img[^>]*>\\s*<img src=\"([^\"]+)\"",
+  "duration": "thumb__duration\">([0-9:]+)<",
+  "referer": "https://www.pornpapa.com/",
+  "paged": true,
+  "followRedirect": true
+ }
+}
