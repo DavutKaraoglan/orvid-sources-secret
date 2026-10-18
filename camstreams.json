@@ -1,7 +1,7 @@
 {
  "id": "camstreams",
  "name": "Camstreams",
- "version": 4,
+ "version": 5,
  "adult": true,
  "weight": 0.6,
  "hedge": 4,
@@ -19,6 +19,10 @@
   "paged": true,
   "timeout": 45,
   "maxHeight": 480,
-  "followRedirect": true
+  "followRedirect": true,
+  "embed": {
+   "from": "camstreams\\.tv/videos/(\\d+)",
+   "to": "https://camstreams.tv/embed/$1"
+  }
  }
 }
