@@ -2,7 +2,7 @@
  "id": "threemovs",
  "name": "3Movs",
  "rank": 33,
- "version": 1,
+ "version": 2,
  "adult": true,
  "weight": 0.6,
  "match": "3movs\\.com/videos/\\d+/[^\\s\"?#]+",
@@ -17,6 +17,10 @@
   "thumb": "data-src=\"([^\"]+)\"",
   "duration": "class=\"time\">([0-9:]+)<",
   "views": "icon-eye\"></i>\\s*<span>([0-9.,KkMm]+)<",
-  "paged": true
+  "paged": true,
+  "embed": {
+   "from": "3movs\\.com/videos?/(\\d+)",
+   "to": "https://www.3movs.com/embed/$1"
+  }
  }
 }

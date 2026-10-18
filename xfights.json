@@ -2,7 +2,7 @@
  "id": "xfights",
  "name": "XFights",
  "rank": 43,
- "version": 1,
+ "version": 2,
  "adult": true,
  "weight": 0.6,
  "match": "xfights\\.to/videos/\\d+/",
@@ -16,6 +16,10 @@
   "title": "title=\"([^\"]+)\"",
   "thumb": "src=\"(https://cdn\\.xfights\\.to/contents/videos_screenshots/[^\"]+)\"",
   "duration": "data-duration=\"([0-9:]+)\"",
-  "views": "data-views=\"([0-9.,KkMm]+)\""
+  "views": "data-views=\"([0-9.,KkMm]+)\"",
+  "embed": {
+   "from": "xfights\\.to/videos?/(\\d+)",
+   "to": "https://xfights.to/embed/$1"
+  }
  }
 }

@@ -1,7 +1,7 @@
 {
  "id": "xxxtube",
  "name": "X-X-X.tube",
- "version": 1,
+ "version": 2,
  "adult": true,
  "weight": 0.6,
  "match": "x\\-x\\-x\\.tube/videos/\\d+",
@@ -16,6 +16,10 @@
   "thumb": "src=\"(https?://[^\"]+\\.(?:jpe?g|webp|png)[^\"]*)\"",
   "duration": "class=\"[^\"]*duration[^\"]*\"[^>]*>\\s*(?:<[^>]+>\\s*)*([0-9]{1,2}:[0-9]{2}(?::[0-9]{2})?)",
   "referer": "https://x-x-x.tube/",
-  "paged": true
+  "paged": true,
+  "embed": {
+   "from": "x\\-x\\-x\\.tube/videos?/(\\d+)",
+   "to": "https://x-x-x.tube/embed/$1"
+  }
  }
 }

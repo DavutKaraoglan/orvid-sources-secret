@@ -2,7 +2,7 @@
  "id": "neporn",
  "name": "NePorn",
  "rank": 48,
- "version": 1,
+ "version": 2,
  "adult": true,
  "weight": 0.6,
  "match": "neporn\\.com/video/\\d+/",
@@ -16,6 +16,10 @@
   "title": "title=\"([^\"]+)\"",
   "thumb": "src=\"(https://[^\"]+\\.jpg)\"",
   "duration": "class=\"[^\"]*duration[^\"]*\"[^>]*>\\s*(?:<[^>]+>\\s*)*([0-9]{1,2}:[0-9]{2}(?::[0-9]{2})?)",
-  "referer": "https://neporn.com/"
+  "referer": "https://neporn.com/",
+  "embed": {
+   "from": "neporn\\.com/videos?/(\\d+)",
+   "to": "https://neporn.com/embed/$1"
+  }
  }
 }

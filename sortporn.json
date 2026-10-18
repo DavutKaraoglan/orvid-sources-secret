@@ -2,7 +2,7 @@
  "id": "sortporn",
  "name": "SortPorn",
  "rank": 38,
- "version": 1,
+ "version": 2,
  "adult": true,
  "weight": 0.6,
  "match": "sortporn\\.com/videos/\\d+/",
@@ -15,6 +15,10 @@
   "href": "href=\"(https://www\\.sortporn\\.com/videos/\\d+/[^\"]+)\"",
   "title": "title=\"([^\"]+)\"",
   "thumb": "src=\"(https://www\\.sortporn\\.com/contents/videos_screenshots/[^\"]+)\"",
-  "duration": "class=\"duration\">([0-9:]+)<"
+  "duration": "class=\"duration\">([0-9:]+)<",
+  "embed": {
+   "from": "sortporn\\.com/videos?/(\\d+)",
+   "to": "https://www.sortporn.com/embed/$1"
+  }
  }
 }

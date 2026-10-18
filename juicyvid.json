@@ -2,7 +2,7 @@
  "id": "juicyvid",
  "name": "JuicyVid",
  "rank": 41,
- "version": 1,
+ "version": 2,
  "adult": true,
  "weight": 0.6,
  "match": "juicyvid\\.com/video/\\d+/",
@@ -16,6 +16,10 @@
   "title": "title=\"([^\"]+)\"",
   "thumb": "data-original=\"([^\"]+)\"",
   "duration": "class=\"duration\">([0-9:]+)<",
-  "views": "class=\"views\">([0-9.,KkMm]+)<"
+  "views": "class=\"views\">([0-9.,KkMm]+)<",
+  "embed": {
+   "from": "juicyvid\\.com/videos?/(\\d+)",
+   "to": "https://juicyvid.com/embed/$1"
+  }
  }
 }

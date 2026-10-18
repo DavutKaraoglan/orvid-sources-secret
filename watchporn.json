@@ -2,7 +2,7 @@
  "id": "watchporn",
  "name": "WatchPorn",
  "rank": 46,
- "version": 1,
+ "version": 2,
  "adult": true,
  "weight": 0.6,
  "match": "watchporn\\.to/video/\\d+/",
@@ -15,6 +15,10 @@
   "href": "href=\"(https://watchporn\\.to/video/[^\"]+)\"",
   "title": "title=\"([^\"]+)\"",
   "thumb": "src=\"(https://[^\"]+\\.jpg)\"",
-  "duration": "class=\"wp-dur\">([0-9:]+)<"
+  "duration": "class=\"wp-dur\">([0-9:]+)<",
+  "embed": {
+   "from": "watchporn\\.to/videos?/(\\d+)",
+   "to": "https://watchporn.to/embed/$1"
+  }
  }
 }
