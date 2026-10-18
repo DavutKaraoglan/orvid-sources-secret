@@ -2,7 +2,7 @@
  "id": "drtuber",
  "name": "DrTuber",
  "rank": 15,
- "version": 1,
+ "version": 2,
  "adult": true,
  "weight": 0.6,
  "match": "drtuber\\.com/video/\\d+/",
@@ -15,7 +15,7 @@
   "href": "href=\"(/video/\\d+/[^\"]+)\"",
   "title": "alt=\"([^\"]+)\"",
   "thumb": "<img [^>]*src=\"(https://[^\"]+)\"",
-  "duration": "time_thumb\">\\s*<em>([0-9:]+)<"
+  "duration": "time_thumb\">[\\s\\S]{0,160}?<em>([0-9]{1,2}:[0-9]{2}(?::[0-9]{2})?)<"
  },
  "web": true
 }
