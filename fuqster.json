@@ -2,7 +2,7 @@
  "id": "fuqster",
  "name": "Fuqster",
  "rank": 47,
- "version": 2,
+ "version": 3,
  "adult": true,
  "weight": 0.6,
  "match": "fuqster\\.com/video/\\d+/",
@@ -15,7 +15,7 @@
   "href": "href=\"(https://fuqster\\.com/video/[^\"]+)\"",
   "title": "title=\"([^\"]+)\"",
   "thumb": "data-original=\"([^\"]+)\"",
-  "duration": "class=\"[^\"]*duration[^\"]*\"[^>]*>\\s*(?:<[^>]+>\\s*)*([0-9]{1,2}:[0-9]{2}(?::[0-9]{2})?)",
+  "duration": "class=\"badge\">(?:\\s*<span[^>]*>[^<]*</span>)?\\s*([0-9]{1,2}:[0-9]{2}(?::[0-9]{2})?)",
   "embed": {
    "from": "fuqster\\.com/videos?/(\\d+)",
    "to": "https://fuqster.com/embed/$1"

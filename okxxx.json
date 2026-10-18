@@ -1,7 +1,7 @@
 {
  "id": "okxxx",
  "name": "OK.XXX",
- "version": 1,
+ "version": 2,
  "adult": true,
  "weight": 0.6,
  "match": "ok\\.xxx/video/\\d+/?",
@@ -15,6 +15,7 @@
   "title": "<a href=\"/video/\\d+/\" title=\"([^\"]+)\"",
   "thumb": "data-original=\"([^\"]+)\"",
   "referer": "https://ok.xxx/",
-  "paged": true
+  "paged": true,
+  "duration": "fa-clock-o\"></i>\\s*<span>([0-9]{1,2}:[0-9]{2}(?::[0-9]{2})?)<"
  }
 }
