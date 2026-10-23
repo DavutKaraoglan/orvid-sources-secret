@@ -6,7 +6,7 @@
  "version": 2,
  "adult": true,
  "weight": 0.6,
- "match": "https?://(?:www\\.)?((?:txxx|hclips|hdzog|hotmovs|inporn|upornia|vxxx|vjav|voyeurhit|tubepornclassic|privatehomeclips)\\.(?:com|tube))/(?:videos?[/-]|embed/)(\\d+)",
+ "match": "https?://(?:www\\.)?(txxx\\.(?:com|tube)|privatehomeclips\\.com)/(?:videos?[/-]|embed/)(\\d+)",
  "icon": "txxx.png",
  "script": "txxx.js"
 }

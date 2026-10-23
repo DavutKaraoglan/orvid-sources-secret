@@ -1,0 +1,10 @@
+{
+ "id": "hdzog",
+ "name": "HDZog",
+ "version": 1,
+ "adult": true,
+ "weight": 0.5,
+ "match": "https?://(?:www\\.)?hdzog\\.com/(?:videos?[/-]|embed/)(\\d+)",
+ "icon": "hdzog.png",
+ "script": "hdzog.js"
+}

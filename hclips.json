@@ -1,0 +1,10 @@
+{
+ "id": "hclips",
+ "name": "HClips",
+ "version": 1,
+ "adult": true,
+ "weight": 0.5,
+ "match": "https?://(?:www\\.)?hclips\\.com/(?:videos?[/-]|embed/)(\\d+)",
+ "icon": "hclips.png",
+ "script": "hclips.js"
+}

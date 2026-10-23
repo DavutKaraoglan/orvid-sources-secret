@@ -1,0 +1,10 @@
+{
+ "id": "inporn",
+ "name": "InPorn",
+ "version": 1,
+ "adult": true,
+ "weight": 0.5,
+ "match": "https?://(?:www\\.)?inporn\\.com/(?:videos?[/-]|embed/)(\\d+)",
+ "icon": "inporn.png",
+ "script": "inporn.js"
+}

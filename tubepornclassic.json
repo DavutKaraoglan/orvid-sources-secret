@@ -1,0 +1,10 @@
+{
+ "id": "tubepornclassic",
+ "name": "TubePornClassic",
+ "version": 1,
+ "adult": true,
+ "weight": 0.5,
+ "match": "https?://(?:www\\.)?tubepornclassic\\.com/(?:videos?[/-]|embed/)(\\d+)",
+ "icon": "tubepornclassic.png",
+ "script": "tubepornclassic.js"
+}

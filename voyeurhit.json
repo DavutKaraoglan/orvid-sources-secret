@@ -1,0 +1,10 @@
+{
+ "id": "voyeurhit",
+ "name": "VoyeurHit",
+ "version": 1,
+ "adult": true,
+ "weight": 0.5,
+ "match": "https?://(?:www\\.)?voyeurhit\\.com/(?:videos?[/-]|embed/)(\\d+)",
+ "icon": "voyeurhit.png",
+ "script": "voyeurhit.js"
+}

@@ -1,0 +1,10 @@
+{
+ "id": "hotmovs",
+ "name": "HotMovs",
+ "version": 1,
+ "adult": true,
+ "weight": 0.5,
+ "match": "https?://(?:www\\.)?hotmovs\\.com/(?:videos?[/-]|embed/)(\\d+)",
+ "icon": "hotmovs.png",
+ "script": "hotmovs.js"
+}

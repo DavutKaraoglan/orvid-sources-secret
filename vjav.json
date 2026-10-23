@@ -1,0 +1,10 @@
+{
+ "id": "vjav",
+ "name": "VJAV",
+ "version": 1,
+ "adult": true,
+ "weight": 0.5,
+ "match": "https?://(?:www\\.)?vjav\\.com/(?:videos?[/-]|embed/)(\\d+)",
+ "icon": "vjav.png",
+ "script": "vjav.js"
+}
