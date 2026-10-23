@@ -58,5 +58,7 @@ function resolve(url) {
     title: util.unescape(call(html, "setVideoTitle"))
   };
   if (hls && mp4) out.fallback = { url: mp4, hls: false };
+  var slide = call(html, "setThumbSlideBig");
+  if (slide) out.sprite = { url: slide, width: 208, height: 117, cols: 10, rows: 10, count: 100 };
   return out;
 }
