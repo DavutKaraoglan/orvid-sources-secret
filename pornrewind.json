@@ -1,0 +1,20 @@
+{
+ "id": "pornrewind",
+ "name": "PornRewind",
+ "version": 1,
+ "adult": true,
+ "weight": 0.6,
+ "match": "pornrewind\\.com/videos/\\d+/",
+ "icon": "pornrewind.png",
+ "html": {
+  "site": "https://www.pornrewind.com",
+  "search": "https://www.pornrewind.com/search/{qp}",
+  "searchPage": "https://www.pornrewind.com/search/{qp}?page={p}",
+  "card": "<div class=\"th\" data-item-id=",
+  "href": "href=\"(https://www\\.pornrewind\\.com/videos/\\d+/[^\"]+)\"",
+  "title": "title=\"([^\"]+)\"",
+  "thumb": "<img src=\"([^\"]+)\"",
+  "duration": "thumb-time\"><span>([0-9:]+)<",
+  "views": "thumb-viewed\"><span>([0-9 ]+)<"
+ }
+}

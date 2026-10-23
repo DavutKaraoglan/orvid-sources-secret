@@ -1,0 +1,19 @@
+{
+ "id": "empflix",
+ "name": "EMPFlix",
+ "version": 1,
+ "adult": true,
+ "weight": 0.6,
+ "match": "empflix\\.com/[^\\s\"]+/video\\d+",
+ "icon": "empflix.png",
+ "html": {
+  "site": "https://www.empflix.com",
+  "search": "https://www.empflix.com/search?what={q}",
+  "searchPage": "https://www.empflix.com/search?what={q}&page={p}",
+  "card": "<div data-vid=\"",
+  "href": "href=\"(https://www\\.empflix\\.com/[^\"]+/video\\d+)\"",
+  "title": "alt=\"([^\"]+)\"",
+  "thumb": "data-src=\"(https://img\\.empflix\\.com/[^\"]+)\"",
+  "duration": "video-duration\">([0-9:]+)<"
+ }
+}
