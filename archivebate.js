@@ -2,6 +2,16 @@ var SITE = "https://archivebate.com";
 var MAX_MODELS = 2;
 var WANTED = 12;
 var PER_MODEL = 10;
+var CHECK_MAX = 18;
+var DEFAULT_LISTS = ["chaturbate", "stripchat"];
+var LISTS = {
+  chaturbate: "Y2hhdHVyYmF0ZQ==",
+  stripchat: "c3RyaXBjaGF0",
+  bongacams: "Ym9uZ2FjYW1z",
+  camsoda: "Y2Ftc29kYQ==",
+  cam4: "Y2FtNA=="
+};
+var SKIP_PLATFORM = /onlyfans|instagram|tiktok|twitch|youtube/i;
 
 function ajax(extra) {
   var h = { "X-Requested-With": "XMLHttpRequest", Accept: "application/json" };
@@ -43,17 +53,19 @@ function cards(html, username, items, seen) {
   html.split('<section class="video_item">').slice(1).forEach(function (c) {
     var link = /href="https:\/\/archivebate\.com\/watch\/(\d+)"/.exec(c);
     if (!link || seen[link[1]]) return;
-    seen[link[1]] = true;
+    var owner = username || (/href="https:\/\/archivebate\.com\/profile\/([^"]+)"/.exec(c) || [])[1] || "";
     var thumb = /background-image:\s*url\('([^']+)'\)/.exec(c) || /poster="([^"]+)"/.exec(c);
     var dur = /<\/svg>\s*([0-9:]+)\s*<\/span>/.exec(c);
     var meta = /<p>([\s\S]*?)<\/p>/.exec(c);
     var parts = meta ? meta[1].split("&middot;") : [];
     var platform = parts.length > 1 ? parts[1].trim() : "";
+    if (SKIP_PLATFORM.test(platform)) return;
+    seen[link[1]] = true;
     var views = parts.length > 2 ? /([\d,.]+)/.exec(parts[2]) : null;
     items.push({
       url: SITE + "/watch/" + link[1],
-      title: username + (platform ? " (" + platform + ")" : ""),
-      author: username,
+      title: owner + (platform ? " (" + platform + ")" : ""),
+      author: owner,
       duration: dur ? util.duration(dur[1]) : 0,
       views: views ? util.number(views[1]) : 0,
       thumb: thumb ? thumb[1] : "",
@@ -62,12 +74,62 @@ function cards(html, username, items, seen) {
   });
 }
 
+function listing(key) {
+  var path = "/platform/" + LISTS[key] + "?filter=popular";
+  var page = http.page(SITE + path);
+  var token = /csrf-token" content="([^"]+)"/.exec(page.body);
+  var data = component(page.body, "filter.platform");
+  if (!token || !data) return "";
+  var body = JSON.stringify({
+    fingerprint: data.fingerprint,
+    serverMemo: data.serverMemo,
+    updates: [{ type: "callMethod", payload: { id: "ab1", method: "load_platform_videos", params: [] } }]
+  });
+  var out = http.post(SITE + "/livewire/message/" + data.fingerprint.name, body, "application/json", {
+    "X-Livewire": "true",
+    "X-CSRF-TOKEN": token[1],
+    Cookie: page.cookies,
+    Referer: SITE + path,
+    Accept: "text/html, application/xhtml+xml"
+  });
+  return (JSON.parse(out).effects || {}).html || "";
+}
+
+function keep(candidates, items) {
+  var batch = candidates.slice(0, CHECK_MAX);
+  var pages = http.all(batch.map(function (b) { return b.url; }), { Referer: SITE + "/" });
+  batch.forEach(function (b, i) {
+    if (items.length < WANTED && pages[i] !== null && playable(pages[i])) items.push(b);
+  });
+}
+
+function browse(keys) {
+  var found = [], seen = {};
+  keys.forEach(function (k) {
+    try {
+      cards(listing(k), "", found, seen);
+    } catch (e) {
+      if (!found.length) throw e;
+    }
+  });
+  found.sort(function (a, b) { return b.views - a.views; });
+  var items = [];
+  keep(found, items);
+  return { items: items, next: null };
+}
+
 function search(query, next) {
   if (next) return { items: [], next: null };
+  var q = (query || "").trim().toLowerCase();
+  if (!q) return browse(DEFAULT_LISTS);
+  if (LISTS.hasOwnProperty(q)) return browse([q]);
   var found = http.json(SITE + "/api/v1/search?query=" + encodeURIComponent(query), ajax({ Referer: SITE + "/" }));
-  var names = [];
+  var names = [], lower = {};
   (found.data || []).forEach(function (m) {
-    if (m.username && names.indexOf(m.username) < 0) names.push(m.username);
+    if (m.username && !lower[m.username.toLowerCase()]) {
+      lower[m.username.toLowerCase()] = true;
+      names.push(m.username);
+    }
   });
   var items = [], seen = {};
   names.slice(0, MAX_MODELS).forEach(function (n) {
@@ -75,11 +137,7 @@ function search(query, next) {
     try {
       var batch = [];
       cards(modelVideos(n), n, batch, seen);
-      batch = batch.slice(0, PER_MODEL);
-      var pages = http.all(batch.map(function (b) { return b.url; }), { Referer: SITE + "/" });
-      batch.forEach(function (b, i) {
-        if (pages[i] === null || playable(pages[i])) items.push(b);
-      });
+      keep(batch.slice(0, PER_MODEL), items);
     } catch (e) {
       if (!items.length) throw e;
     }

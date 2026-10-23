@@ -1,11 +1,13 @@
 {
  "id": "archivebate",
  "name": "Archivebate",
- "version": 1,
+ "version": 3,
  "adult": true,
  "weight": 0.5,
  "match": "archivebate\\.com/watch/\\d+",
  "icon": "archivebate.png",
  "script": "archivebate.js",
- "minQuery": 3
+ "minQuery": 3,
+ "browse": true,
+ "hedge": 3
 }
