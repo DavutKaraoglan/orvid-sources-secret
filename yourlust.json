@@ -1,0 +1,21 @@
+{
+ "id": "yourlust",
+ "name": "YourLust",
+ "version": 1,
+ "adult": true,
+ "weight": 0.5,
+ "match": "yourlust\\.com/videos/[^\\s\"?#]+\\.html",
+ "icon": "yourlust.png",
+ "html": {
+  "site": "https://yourlust.com",
+  "search": "https://yourlust.com/search/?q={q}",
+  "searchPage": "https://yourlust.com/search/{p}/?q={q}",
+  "card": "<div class=\"item\">",
+  "href": "href=\"((?:https://yourlust\\.com)?/videos/[^\"]+\\.html)\"",
+  "title": "title=\"([^\"]+)\"",
+  "thumb": "class=\"thumb\" src=\"(https://[^\"]+)\"",
+  "duration": "class=\"length\">([0-9:]+)<",
+  "views": "class=\"views\">(\\d+) views",
+  "paged": true
+ }
+}

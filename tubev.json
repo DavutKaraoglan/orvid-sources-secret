@@ -1,0 +1,18 @@
+{
+ "id": "tubev",
+ "name": "TubeV",
+ "version": 1,
+ "adult": true,
+ "weight": 0.5,
+ "match": "tubev\\.sex/video/\\d+/[^\\s\"?#]+",
+ "icon": "tubev.png",
+ "html": {
+  "site": "https://www.tubev.sex",
+  "search": "https://www.tubev.sex/find?q={q}",
+  "card": "<figure",
+  "href": "href=\"(https://www\\.tubev\\.sex/video/\\d+/[^\"]+)\"",
+  "title": "title=\"([^\"]+)\"",
+  "thumb": "src=\"((?:https:)?//cdn-pic[^\"]+\\.jpg)\"",
+  "duration": "<!--<i></i>-->([0-9:]+)<"
+ }
+}

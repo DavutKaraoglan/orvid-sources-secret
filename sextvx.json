@@ -1,0 +1,19 @@
+{
+ "id": "sextvx",
+ "name": "SexTVX",
+ "version": 1,
+ "adult": true,
+ "weight": 0.5,
+ "match": "sextvx\\.com/video/\\d+/[^\\s\"?#]+",
+ "icon": "sextvx.png",
+ "html": {
+  "site": "https://www.sextvx.com",
+  "search": "https://www.sextvx.com/results?search_query={q}",
+  "searchPage": "https://www.sextvx.com/results?search_query={q}&page={p}",
+  "card": "<div class=\"video rotate\"",
+  "href": "href=\"(/video/\\d+/[^\"]+)\"",
+  "title": "<h3>\\s*<a href=\"[^\"]*\"\\s+title=\"([^\"]+)\"",
+  "thumb": "<img src=\"(https://[^\"]+\\.jpg)\"",
+  "paged": true
+ }
+}

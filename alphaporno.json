@@ -1,0 +1,20 @@
+{
+ "id": "alphaporno",
+ "name": "AlphaPorno",
+ "version": 1,
+ "adult": true,
+ "weight": 0.5,
+ "match": "alphaporno\\.com/videos/[^\\s\"?#]+/",
+ "icon": "alphaporno.png",
+ "html": {
+  "site": "https://www.alphaporno.com",
+  "search": "https://www.alphaporno.com/search/?q={q}",
+  "searchPage": "https://www.alphaporno.com/search/{p}/?q={q}",
+  "card": "<li class=\"thumb\" itemscope",
+  "href": "href=\"(https://www\\.alphaporno\\.com/videos/[^\"]+/)\"",
+  "title": "<p itemprop=\"name\">([^<]+)<",
+  "thumb": "<img class=\"pic\" src=\"(https://[^\"]+\\.jpg)\"",
+  "duration": "class=\"duration\">([0-9:]+)<",
+  "paged": true
+ }
+}

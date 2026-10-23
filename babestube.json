@@ -1,0 +1,20 @@
+{
+ "id": "babestube",
+ "name": "BabesTube",
+ "version": 1,
+ "adult": true,
+ "weight": 0.5,
+ "match": "babestube\\.com/videos/\\d+/[^\\s\"?#]+/",
+ "icon": "babestube.png",
+ "html": {
+  "site": "https://www.babestube.com",
+  "search": "https://www.babestube.com/search/{qp}/",
+  "searchPage": "https://www.babestube.com/search/{qp}/{p}/",
+  "card": "<div class=\"item thumb\">",
+  "href": "href=\"(https://www\\.babestube\\.com/videos/\\d+/[^\"]+/)\"",
+  "title": "title=\"([^\"]+)\"",
+  "thumb": "data-src=\"(https://[^\"]+\\.jpg)\"",
+  "duration": "class=\"time\">([0-9:]+)<",
+  "paged": true
+ }
+}

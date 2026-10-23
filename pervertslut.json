@@ -1,0 +1,20 @@
+{
+ "id": "pervertslut",
+ "name": "PervertSlut",
+ "version": 1,
+ "adult": true,
+ "weight": 0.5,
+ "match": "pervertslut\\.com/videos/\\d+/[^\\s\"?#]+/",
+ "icon": "pervertslut.png",
+ "html": {
+  "site": "https://pervertslut.com",
+  "search": "https://pervertslut.com/search/{qp}/",
+  "searchPage": "https://pervertslut.com/search/{qp}/?from_videos={p}",
+  "card": "<div class=\"thumb item ",
+  "href": "href=\"(https://pervertslut\\.com/videos/\\d+/[^\"]+/)\"",
+  "title": "title=\"([^\"]+)\"",
+  "thumb": "data-original=\"(https://[^\"]+\\.jpg)\"",
+  "duration": "class=\"time\">([0-9:]+)<",
+  "paged": true
+ }
+}

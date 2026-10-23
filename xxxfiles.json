@@ -1,0 +1,21 @@
+{
+ "id": "xxxfiles",
+ "name": "XXXFiles",
+ "version": 1,
+ "adult": true,
+ "weight": 0.6,
+ "match": "xxxfiles\\.com/videos/\\d+/[^\\s\"?#]+/",
+ "icon": "xxxfiles.png",
+ "html": {
+  "site": "https://www.xxxfiles.com",
+  "search": "https://www.xxxfiles.com/search/{qp}/",
+  "searchPage": "https://www.xxxfiles.com/search/{qp}/{p}/",
+  "card": "<div class=\"thumb item",
+  "href": "href=\"(https://www\\.xxxfiles\\.com/videos/\\d+/[^\"]+/)\"",
+  "title": "<div class=\"thumb__title\">\\s*<span>([^<]+)<",
+  "thumb": "<img src=\"(https://[^\"]+)\"",
+  "duration": "thumb__duration\">([0-9:]+)<",
+  "views": "thumb__text\">([\\d,]+) views",
+  "paged": true
+ }
+}
