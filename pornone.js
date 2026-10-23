@@ -32,9 +32,10 @@ function resolve(url) {
   var html = http.get(url);
   var title = /property="og:title"\s+content="([^"]*)"/.exec(html);
   var cap = env.tor ? 720 : 1080, best = -1, lowest = 1e9, file = null, smallest = null;
-  var re = /<source[^>]+src="([^"]+)"[^>]*res="(\d+)"/g, m;
+  var re = /<source[^>]+src="([^"]+)"[^>]*res="(\d+)"/g, m, qualities = [];
   while ((m = re.exec(html))) {
     var h = parseInt(m[2], 10);
+    qualities.push({ url: m[1], height: h });
     if (h <= cap && h > best) {
       best = h;
       file = m[1];
@@ -46,5 +47,11 @@ function resolve(url) {
   }
   file = file || smallest;
   if (!file) throw new Error("no stream");
-  return { url: file, hls: false, title: title ? util.unescape(title[1]) : "" };
+  var out = { url: file, hls: false, title: title ? util.unescape(title[1]) : "", qualities: qualities };
+  var slide = /slideImage:\s*'([^']+\/sprite\/[^']+-(\d+)-(\d+)-(\d+)-\d+-[0-9a-f]+\.jpg)'/.exec(html);
+  if (slide) {
+    var n = parseInt(slide[4], 10);
+    out.sprite = { url: slide[1], width: parseInt(slide[2], 10), height: parseInt(slide[3], 10), cols: n, rows: 1, count: n };
+  }
+  return out;
 }
