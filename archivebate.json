@@ -1,0 +1,11 @@
+{
+ "id": "archivebate",
+ "name": "Archivebate",
+ "version": 1,
+ "adult": true,
+ "weight": 0.5,
+ "match": "archivebate\\.com/watch/\\d+",
+ "icon": "archivebate.png",
+ "script": "archivebate.js",
+ "minQuery": 3
+}
