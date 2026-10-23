@@ -1,0 +1,10 @@
+{
+ "id": "xnxx",
+ "name": "XNXX",
+ "version": 1,
+ "adult": true,
+ "weight": 0.6,
+ "match": "xnxx\\.com/video-[a-z0-9]+/",
+ "icon": "xnxx.png",
+ "script": "xnxx.js"
+}

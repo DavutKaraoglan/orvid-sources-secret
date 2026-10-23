@@ -1,0 +1,20 @@
+{
+ "id": "porngem",
+ "name": "PornGem",
+ "version": 1,
+ "adult": true,
+ "weight": 0.6,
+ "match": "porngem\\.com/videos/[^\\s\"?#]+/",
+ "icon": "porngem.png",
+ "html": {
+  "site": "https://www.porngem.com",
+  "search": "https://www.porngem.com/search/{qp}/",
+  "searchPage": "https://www.porngem.com/search/{qp}/?from_videos={p}",
+  "card": "<div class=\"grid-item item ",
+  "href": "href=\"(https://www\\.porngem\\.com/videos/[^\"]+/)\"",
+  "title": "title=\"([^\"]+)\"",
+  "thumb": "data-original=\"(https://[^\"]+\\.jpg[^\"]*)\"",
+  "duration": "class=\"duration-value\">([0-9:]+)<",
+  "paged": true
+ }
+}
