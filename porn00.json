@@ -1,0 +1,19 @@
+{
+ "id": "porn00",
+ "name": "Porn00",
+ "version": 1,
+ "adult": true,
+ "weight": 0.5,
+ "match": "porn00\\.org/video/[^\\s\\\"'?#]+",
+ "icon": "porn00.png",
+ "html": {
+  "site": "https://www.porn00.org",
+  "search": "https://www.porn00.org/search/{qp}/",
+  "searchPage": "https://www.porn00.org/search/{qp}/{p}/",
+  "card": "<div class=\"item  \"",
+  "href": "href=\"(https://(?:www\\.)?porn00\\.org/video/[^\\\"]+)\"",
+  "title": "title=\"([^\"]+)\"",
+  "thumb": "<img[^>]*\\bdata-original=\"(https?://[^\"]+)\"",
+  "duration": ">\\s*(\\d{1,2}:\\d{2}(?::\\d{2})?)\\s*<"
+ }
+}

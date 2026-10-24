@@ -1,0 +1,19 @@
+{
+ "id": "mylust",
+ "name": "MyLust",
+ "version": 1,
+ "adult": true,
+ "weight": 0.5,
+ "match": "mylust\\.com/videos/\\d+/",
+ "icon": "mylust.png",
+ "html": {
+  "site": "https://www.mylust.com",
+  "search": "https://www.mylust.com/search/?q={q}",
+  "searchPage": "https://www.mylust.com/search/{p}/?q={q}",
+  "card": "<div class=\"item  \"",
+  "href": "href=\"(https://(?:www\\.)?mylust\\.com/videos/\\d+/[^\\\"]+)\"",
+  "title": "alt=\"([^\"]+)\"",
+  "thumb": "<img[^>]*\\bsrc=\"(https?://[^\"]+)\"",
+  "duration": ">\\s*(\\d{1,2}:\\d{2}(?::\\d{2})?)\\s*<"
+ }
+}
