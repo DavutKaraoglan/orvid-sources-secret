@@ -1,0 +1,10 @@
+{
+ "id": "youporn",
+ "name": "YouPorn",
+ "version": 1,
+ "adult": true,
+ "weight": 0.6,
+ "match": "youporn\\.com/watch/(\\d+)",
+ "icon": "youporn.png",
+ "script": "youporn.js"
+}

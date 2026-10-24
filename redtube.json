@@ -1,0 +1,10 @@
+{
+ "id": "redtube",
+ "name": "RedTube",
+ "version": 1,
+ "adult": true,
+ "weight": 0.6,
+ "match": "redtube\\.com/(\\d+)",
+ "icon": "redtube.png",
+ "script": "redtube.js"
+}
