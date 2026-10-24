@@ -1,0 +1,10 @@
+{
+ "id": "thumbzilla",
+ "name": "Thumbzilla",
+ "version": 1,
+ "adult": true,
+ "weight": 0.5,
+ "match": "thumbzilla\\.com/watch/(\\d+)",
+ "icon": "thumbzilla.png",
+ "script": "thumbzilla.js"
+}
