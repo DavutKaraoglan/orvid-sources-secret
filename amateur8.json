@@ -1,0 +1,19 @@
+{
+ "id": "amateur8",
+ "name": "Amateur8",
+ "version": 1,
+ "adult": true,
+ "weight": 0.5,
+ "match": "amateur8\\.com/videos/\\d+/",
+ "icon": "amateur8.png",
+ "html": {
+  "site": "https://www.amateur8.com",
+  "search": "https://www.amateur8.com/search/{qp}/",
+  "searchPage": "https://www.amateur8.com/search/{qp}/#{p}",
+  "card": "<div class=\"item  \"",
+  "href": "href=\"(https://(?:www\\.)?amateur8\\.com/videos/\\d+/[^\\\"]+)\"",
+  "title": "title=\"([^\"]+)\"",
+  "thumb": "<img[^>]*\\bdata-webp=\"(https?://[^\"]+)\"",
+  "duration": ">\\s*(\\d{1,2}:\\d{2}(?::\\d{2})?)\\s*<"
+ }
+}
