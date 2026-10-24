@@ -1,0 +1,10 @@
+{
+ "id": "shemalez",
+ "name": "Shemalez",
+ "version": 1,
+ "adult": true,
+ "weight": 0.5,
+ "match": "https?://(?:www\\.)?shemalez\\.com/(?:videos?[/-]|embed/)(\\d+)",
+ "icon": "shemalez.png",
+ "script": "shemalez.js"
+}

@@ -1,0 +1,10 @@
+{
+ "id": "manysex",
+ "name": "ManySex",
+ "version": 1,
+ "adult": true,
+ "weight": 0.5,
+ "match": "https?://(?:www\\.)?manysex\\.com/(?:videos?[/-]|embed/)(\\d+)",
+ "icon": "manysex.png",
+ "script": "manysex.js"
+}

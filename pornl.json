@@ -1,0 +1,10 @@
+{
+ "id": "pornl",
+ "name": "PornL",
+ "version": 1,
+ "adult": true,
+ "weight": 0.5,
+ "match": "https?://(?:www\\.)?pornl\\.com/(?:videos?[/-]|embed/)(\\d+)",
+ "icon": "pornl.png",
+ "script": "pornl.js"
+}
