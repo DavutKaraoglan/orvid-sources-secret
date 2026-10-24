@@ -1,0 +1,19 @@
+{
+ "id": "fetishshrine",
+ "name": "FetishShrine",
+ "version": 1,
+ "adult": true,
+ "weight": 0.5,
+ "match": "fetishshrine\\.com/videos/\\d+/",
+ "icon": "fetishshrine.png",
+ "html": {
+  "site": "https://www.fetishshrine.com",
+  "search": "https://www.fetishshrine.com/search/?q={q}",
+  "searchPage": "https://www.fetishshrine.com/search/{p}/?q={q}",
+  "card": "<div class=\"thumb-inner\"",
+  "href": "href=\"(https://(?:www\\.)?fetishshrine\\.com/videos/\\d+/[^\\\"]+)\"",
+  "title": "alt=\"([^\"]+)\"",
+  "thumb": "<img[^>]*\\bsrc=\"(https?://[^\"]+)\"",
+  "duration": ">\\s*(\\d{1,2}:\\d{2}(?::\\d{2})?)\\s*<"
+ }
+}
