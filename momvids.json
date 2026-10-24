@@ -1,0 +1,19 @@
+{
+ "id": "momvids",
+ "name": "MomVids",
+ "version": 1,
+ "adult": true,
+ "weight": 0.5,
+ "match": "momvids\\.com/videos/\\d+/",
+ "icon": "momvids.png",
+ "html": {
+  "site": "https://www.momvids.com",
+  "search": "https://www.momvids.com/search/{qp}/",
+  "searchPage": "https://www.momvids.com/search/{qp}/{p}/",
+  "card": "<div class=\"item thumb\"",
+  "href": "href=\"(https://(?:www\\.)?momvids\\.com/videos/\\d+/[^\\\"]+)\"",
+  "title": "title=\"([^\"]+)\"",
+  "thumb": "<img[^>]*\\bdata-src=\"(https?://[^\"]+)\"",
+  "duration": ">\\s*(\\d{1,2}:\\d{2}(?::\\d{2})?)\\s*<"
+ }
+}
