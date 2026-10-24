@@ -1,0 +1,10 @@
+{
+ "id": "tube8",
+ "name": "Tube8",
+ "version": 1,
+ "adult": true,
+ "weight": 0.6,
+ "match": "tube8\\.com/porn-video/(\\d+)",
+ "icon": "tube8.png",
+ "script": "tube8.js"
+}
