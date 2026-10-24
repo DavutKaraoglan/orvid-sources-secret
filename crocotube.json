@@ -1,0 +1,19 @@
+{
+ "id": "crocotube",
+ "name": "CrocoTube",
+ "version": 1,
+ "adult": true,
+ "weight": 0.5,
+ "match": "crocotube\\.com/videos/[^\\s\\\"'?#]+",
+ "icon": "crocotube.png",
+ "html": {
+  "site": "https://crocotube.com",
+  "search": "https://crocotube.com/search/?q={q}",
+  "searchPage": "https://crocotube.com/search/{p}/?q={q}",
+  "card": "<div class=\"thumb\"",
+  "href": "href=\"(https://(?:www\\.)?crocotube\\.com/videos/[^\\\"]+)\"",
+  "title": "alt=\"([^\"]+)\"",
+  "thumb": "<img[^>]*\\bsrc=\"(https?://[^\"]+)\"",
+  "duration": ">\\s*(\\d{1,2}:\\d{2}(?::\\d{2})?)\\s*<"
+ }
+}

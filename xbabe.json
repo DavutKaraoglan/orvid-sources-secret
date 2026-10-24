@@ -1,0 +1,19 @@
+{
+ "id": "xbabe",
+ "name": "xBabe",
+ "version": 1,
+ "adult": true,
+ "weight": 0.5,
+ "match": "xbabe\\.com/videos/[^\\s\\\"'?#]+",
+ "icon": "xbabe.png",
+ "html": {
+  "site": "https://xbabe.com",
+  "search": "https://xbabe.com/search/?q={q}",
+  "searchPage": "https://xbabe.com/search/{p}/?q={q}",
+  "card": "<div class=\"thumb\"",
+  "href": "href=\"(https://(?:www\\.)?xbabe\\.com/videos/[^\\\"]+)\"",
+  "title": "alt=\"([^\"]+)\"",
+  "thumb": "<img[^>]*\\bdata-original=\"(https?://[^\"]+)\"",
+  "duration": ">\\s*(\\d{1,2}:\\d{2}(?::\\d{2})?)\\s*<"
+ }
+}
